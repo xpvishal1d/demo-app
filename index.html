@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>march app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="register">
+         <div class="reg-navbar">
+           register here
+         </div> </div>
+ 
+         <div class="logo">
+            <div class="logo-img"> <img src="logogg.png" alt="NaI"> 
+            
+         </div>
+         
+            
+           
+            
+         </div>
+         <!-- <h2>March App</h2> // add karna hai ise  -->
+ 
+     </header>
+
+
+
+
+
+    <script>
+        function data() {
+            
+var a = document.getElementById("n1").value;
+var b = document.getElementById("n2").value;
+var c = document.getElementById("n3").value;
+var d= document.getElementById("n4").value;
+var e= document.getElementById("n5").value;
+
+if (a =="" || b=="" || c=="" ||d==""|| e =="") {
+    alert("please enter your data")
+    return false ;
+    
+}
+else if(a.length <10 || b.length >10 ) {
+    alert("number should be of 10 digits")
+    return false ;
+    
+}
+else if(isNaN (a) ) {
+    alert("only numbers are allowed")
+    return false ;
+    
+}
+else if(b !=c) {
+    alert("please enter same password")
+    return false ;
+    
+}
+else if(b.length <6 || c.length<6) {
+    alert("password should be 6 degits")
+    return false ;
+    
+}
+else {
+    true ;
+}
+}
+
+    </script>
+
+    <form onsubmit="return data()" action="login.html">
+            <input id="n1" type="text" placeholder="please enter your mobile number">
+
+            <input id="n2" placeholder="enter your password" type="password">
+
+            <input id="n3" placeholder="conform your password" type="password">
+
+            <input id="n4" placeholder="enter your withdrawal password" type="password">
+
+
+            <span>refferal code </span>
+
+
+          <input id="n5" value =" 5555">
+
+      <div class="subm">  <input type="submit"> </div>
+    </form>
+    <div class="login">
+
+        <button id="login-buton">
+               <a href="login.html"> already have an account</a>
+        </button>
+        
+        
+        </div>
+
+</body>
+</html>
+
